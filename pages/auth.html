@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>login!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
   
@@ -20,7 +21,7 @@
 <button disabled>Google</button>
 <button disabled>GitHub</button>
 <a href="" disabled>create an account</a>
-<p>little footer or disclaimer</p>
+<p>hint, use any password and 12345 is the password</p>
 
 <script>
 
@@ -35,7 +36,7 @@ function checkLogin(){
   const passBox = document.getElementById('passBox').value; 
   // console.log(passBox);  
 
-  if(passBox == 'lasagna'){
+  if(passBox == '12345'){
     console.log('should be true');
     isAuthN = true; 
     console.log(isAuthN);
@@ -52,7 +53,7 @@ function checkLogin(){
 }
 
 function demoMode(){
-  document.getElementById('passBox').value = 'lasagna'
+  document.getElementById('passBox').value = '12345'
 }
 
 
