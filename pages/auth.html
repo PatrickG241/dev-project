@@ -1,44 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>login!</title>
 </head>
 <body>
-
-    <a href="../index.html"> <-- gohome</a>
-    <h1>log in !</h1>
-    <label>username</label>
-    <input id="userBox">
-    <br>
-    <label for="">password</label>
-    <input id="passBox" type="password">
-    <br>
-    <button id="loginBtn">log in</button>
-    <br>
-    <button disabled>Google</button>
-    <button disabled>Git</button>
-    <a href="" disabled>create an account</a>
-    <p>little footer or disclaimer</p>
-    <!--
-        todo:    
-    -->
-    <ul>
-        <li>action: login</li>
-        <li>username textbox</li>
-        <li>pwd textbox</li>
-        <li>button to do it </li>
-        <li>oauth, google</li>
-        <li>forgot pw</li>
-        <li>create account</li>
-    </ul>
+  
+<a href="../index.html"><-- go home</a>
+<h1>log in!</h1>
+<label>username</label>
+<input id="userBox" type="textbox">
+<br> 
+<label>password</label>
+<input id="passBox" type="password"> 
+<br> 
+<button id="loginBtn">log in</button>
+<br> 
+<button disabled>Google</button>
+<button disabled>GitHub</button>
+<a href="" disabled>create an account</a>
+<p>little footer or disclaimer</p>
 
 <script>
-    document.getElementById('loginBtn').addEventListener('click', () => {
-        let password = document.getElementById('passBox')
-        console.log(password.value);
-    })
+
+document.getElementById('loginBtn').addEventListener('click', checkLogin); 
+
+function checkLogin(){
+
+  let isAuthN = false; 
+
+  console.log('we are in the checkLogin f/n'); 
+  
+  const passBox = document.getElementById('passBox').value; 
+  // console.log(passBox);  
+
+  if(passBox == 'lasagna'){
+    console.log('should be true');
+    isAuthN = true; 
+    console.log(isAuthN);
+    sessionStorage.setItem('sessionAuthN', isAuthN);
+    window.location.assign('../index.html');
+  }
+  else {
+    console.log('should be false');
+     isAuthN = false; 
+     console.log(isAuthN); 
+     sessionStorage.setItem('sessionAuthN', isAuthN) 
+     //todo stuff give msg wrong, clear out the textboxes. 
+  }
+}
+
+function demoMode(){
+  document.getElementById('passBox').value = 'lasagna'
+}
+
 
 </script>
 
