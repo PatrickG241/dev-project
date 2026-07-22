@@ -1,0 +1,48 @@
+[
+  {
+    "id": "charlie-1751932800000",
+    "title": "Charlie Fish Tracker",
+    "tagline": "A simple fishing catch tracking application",
+    "tags": ["fishing", "tracker", "web-app", "bootstrap"],
+    "userStory": {
+      "asA": "fishing enthusiast",
+      "iWant": "to track my fishing catches including species, length, weight, and location",
+      "soThat": "I can review my fishing history and improve my skills over time"
+    },
+    "links": [
+      {
+        "type": "repo",
+        "description": "GitHub Repository",
+        "url": "https://github.com/PatrickG241/dev-project"
+      },
+      {
+        "type": "live",
+        "description": "Live Demo",
+        "url": "https://patrickg241.github.io/dev-project/"
+      }
+    ],
+    "notes": [
+      {
+        "id": "note-1",
+        "title": "Project Overview",
+        "text": "A web application for tracking fishing catches with features for adding, viewing, searching, filtering, and managing catch data. Includes authentication, data persistence via GitHub Gist, and an admin dashboard.",
+        "author": "PatrickG241",
+        "date": "2026-07-21"
+      },
+      {
+        "id": "note-2",
+        "title": "Tech Stack",
+        "text": "Built with HTML5, CSS3, JavaScript (vanilla), Bootstrap 5, Bootstrap Icons, Google Fonts (Roboto), jQuery, and jQuery UI. Uses localStorage and sessionStorage for data persistence, and GitHub Gist API for cloud backup.",
+        "author": "PatrickG241",
+        "date": "2026-07-21"
+      }
+    ],
+    "metadata": {
+      "status": "active",
+      "author": "PatrickG241",
+      "createdAt": "2026-07-21T00:00:00.000Z",
+      "updatedAt": "2026-07-21T00:00:00.000Z",
+      "version": "1.0.0"
+    }
+  }
+]

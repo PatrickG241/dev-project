@@ -1,97 +1,57 @@
+/**
+ * Add catch form styling
+ */
+
 body {
-  font-family: Arial, sans-serif;
-  background-color: #87CEEB;
-  background-image: url("../fishbackground.jpg");
-  background-repeat: repeat;
-  background-size: 200px 200px;
-  opacity: 0.9;
-  color: #003366;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+  color: #212529;
   margin: 0;
-  padding: 20px;
+  padding: 0;
   min-height: 100vh;
 }
- 
-h1 {
-  color: #004080;
-  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 10px;
-  border-radius: 15px;
-  max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
- 
-form {
-  background: rgba(255, 255, 255, 0.95);
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 0 auto;
-}
- 
-label {
-  display: block;
-  margin: 10px 0 5px;
-  color: #0059b3;
-  font-weight: bold;
-}
- 
-input {
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #1E90FF;
-  border-radius: 5px;
-  box-sizing: border-box;
-  font-size: 16px;
-}
- 
-input:focus {
-  outline: none;
-  border-color: #004080;
-  box-shadow: 0 0 5px rgba(30, 144, 255, 0.5);
-}
- 
-button {
-  background: #1E90FF;
-  color: white;
-  padding: 12px 24px;
+
+.card {
   border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 20px;
-  width: 100%;
+  border-radius: 8px;
 }
- 
-button:hover {
-  background: #004080;
+
+.card-body {
+  padding: 2rem;
 }
- 
-#message {
-  background: rgba(255, 255, 255, 0.95);
-  margin-top: 20px;
-  font-weight: bold;
-  color: #228B22;
-  text-align: center;
-    max-width: 400px;
-  margin: 0 auto;
-  margin-top: 20px;
-  border-radius: 15px;
+
+.form-label {
+  font-weight: 500;
+  color: #495057;
 }
- 
-a {
-  color: #0066cc;
+
+.form-control {
+  border-radius: 6px;
+  border: 1px solid #ced4da;
+}
+
+.form-control:focus {
+  border-color: #0d6efd;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.btn {
+  border-radius: 6px;
+  font-weight: 500;
+}
+
+.btn-link {
   text-decoration: none;
-  background: rgba(255, 255, 255, 0.95);
-  padding: 8px 16px;
-  border-radius: 5px;
-  display: inline-block;
 }
- 
-a:hover {
+
+.btn-link:hover {
   text-decoration: underline;
 }
- 
+
+.alert {
+  border-radius: 6px;
+}
+
+.navbar-brand {
+  font-weight: 500;
+}
